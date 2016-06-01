@@ -146,9 +146,20 @@ a {
         width: 98%; } }
 
 /* 5. Header */
+.header:after {
+    background: url(images/cubes.png) center repeat;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	opacity: 0.25;
+	z-index: -1;
+}
 .header {
   height: 1002px;
-  background: #888888 url("images/diner-336499.jpg") 50% 0 no-repeat fixed;
+  background: #888888 url("images/about_us_header.jpg") 52% 0 no-repeat fixed;
   background-size: cover;
   color: white;
   z-index: 1;
@@ -719,7 +730,7 @@ a {
       background-color: #10a1d6;
       float: left;
       height: 160px;
-      width: 190px;
+      width: 160px;
       margin: -3px 25px 0 -3px;
       color: white;
       font-family: "Roboto Condensed", sans-serif;
