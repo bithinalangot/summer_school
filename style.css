@@ -536,18 +536,18 @@ a {
         font-size: 1.22222em; } }
 
 .why {
-  background: black url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
+  background: black url("images/about_us_header.jpg") no-repeat 50% 0 fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("images/about_us_header.jpg") no-repeat 50% 0 fixed;
   /* Saf4+, Chrome */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/about_us_header.jpg") no-repeat 50% 0 fixed;
   /* Chrome 10+, Saf5.1+ */
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/about_us_header.jpg") no-repeat 50% 0 fixed;
   /* FF3.6+ */
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/about_us_header.jpg") no-repeat 50% 0 fixed;
   /* IE10 */
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/about_us_header.jpg") no-repeat 50% 0 fixed;
   /* Opera 11.10+ */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/about_us_header.jpg") no-repeat 50% 0 fixed;
   /* W3C */
   color: white;
   -webkit-background-size: cover;
@@ -730,7 +730,7 @@ a {
       background-color: #10a1d6;
       float: left;
       height: 160px;
-      width: 160px;
+      width: 190px;
       margin: -3px 25px 0 -3px;
       color: white;
       font-family: "Roboto Condensed", sans-serif;
@@ -798,18 +798,18 @@ a {
 .location {
   padding-top: 124px;
   position: relative;
-  background: black url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
+  background: black url("images/about_us_header.jpg") no-repeat 50% 0 fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("images/about_us_header.jpg") no-repeat 50% 0 fixed;
   /* Saf4+, Chrome */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/about_us_header.jpg") no-repeat 50% 0 fixed;
   /* Chrome 10+, Saf5.1+ */
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/about_us_header.jpg") no-repeat 50% 0 fixed;
   /* FF3.6+ */
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/about_us_header.jpg") no-repeat 50% 0 fixed;
   /* IE10 */
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/about_us_header.jpg") no-repeat 50% 0 fixed;
   /* Opera 11.10+ */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/about_us_header.jpg") no-repeat 50% 0 fixed;
   /* W3C */
   -webkit-background-size: cover;
   -moz-background-size: cover;
