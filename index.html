@@ -2,58 +2,58 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
-<title>The Annual Conference</title>
+  <meta charset="utf-8">
+  <title>The Annual Conference</title>
 
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
 
-<link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
-<link href="scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
-<link href="animate.min.css" rel="stylesheet" />
-<link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
+  <link href="animate.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
 
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script>
-  function initialize() {
-    var myLatlng = new google.maps.LatLng(12.894655,77.675153);
-    var map_options = {
-      zoom: 16,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      center: myLatlng,
-      scrollwheel: false,
-      disableDefaultUI: true
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script>
+    function initialize() {
+      var myLatlng = new google.maps.LatLng(12.894655,77.675153);
+      var map_options = {
+        zoom: 16,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        center: myLatlng,
+        scrollwheel: false,
+        disableDefaultUI: true
+      }
+
+      var map = new google.maps.Map(document.getElementById('map_canvas'), map_options)
+      var myIcon = new google.maps.MarkerImage('images/map_icon.png', null, null, null, new google.maps.Size(36,54));
+
+      var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        icon: myIcon
+      });
+
+      /* Remove if you dont want B/W Google Map */
+      /*
+       var styles = [
+       {
+       featureType: "all",
+       stylers: [
+       { saturation: -100 }
+       ]
+       }
+       ];
+
+       map.setOptions({styles: styles});
+       */
     }
 
-    var map = new google.maps.Map(document.getElementById('map_canvas'), map_options)
-    var myIcon = new google.maps.MarkerImage('images/map_icon.png', null, null, null, new google.maps.Size(36,54));
-
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      icon: myIcon
-    });
-
-    /* Remove if you dont want B/W Google Map */
-    /*
-    var styles = [
-      {
-        featureType: "all",
-        stylers: [
-          { saturation: -100 }
-        ]
-      }
-    ];
-
-    map.setOptions({styles: styles});
-    */
-  }
-
-  google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-<!-- Google Map Ends! -->
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+  <!-- Google Map Ends! -->
 
 </head>
 
@@ -81,57 +81,57 @@
 
     <!-- header container -->
     <div class="pattern">
-    <div class="container">
+      <div class="container">
 
-      <!-- logo or main heading -->
-      <h1><a href="#">7th International Summer School on Information Security and Protection</a></h1>
-      <!-- logo or main heading ends! -->
+        <!-- logo or main heading -->
+        <h1><a href="#">7th International Summer School on Information Security and Protection</a></h1>
+        <!-- logo or main heading ends! -->
 
-      <!-- subtitle -->
-      <p class="subtitle">6 hands-on workshop on information security from experts <strong><a href="#">just 100 available seats</a></strong>.</p>
-      <!-- subtitle ends! -->
+        <!-- subtitle -->
+        <p class="subtitle">6 hands-on workshop on information security from experts <strong><a href="#">just 100 available seats</a></strong>.</p>
+        <!-- subtitle ends! -->
 
-      <!-- when -->
-      <div class="when">
+        <!-- when -->
+        <div class="when">
 
-        <div class="icon-holder">
-          <i class="fa fa-calendar"></i>
+          <div class="icon-holder">
+            <i class="fa fa-calendar"></i>
+          </div>
+
+          <div>
+            <p><strong>When</strong></p>
+            <p><span>2th to 6th August 2016</span><br />Starting at 10am</p>
+          </div>
+
         </div>
+        <!-- when ends!-->
 
-        <div>
-          <p><strong>When</strong></p>
-          <p><span>2th to 6th August 2016</span><br />Starting at 10am</p>
+        <!-- where -->
+        <div class="where">
+
+          <div class="icon-holder">
+            <i class="fa fa-map-marker"></i>
+          </div>
+
+          <div>
+            <p><strong>Where</strong></p>
+            <p><span>Bangalore</span><br /><a href="#">Amrita School of Engineering, Bangalore Campus</a></p>
+          </div>
+
         </div>
+        <!-- where ends! -->
+
+        <!-- register -->
+        <div class="register-now">
+          <p>Tickets are on sale now, Early bird price till June 15th!</p>
+          <a href="#registration" class="button">Register Now</a>
+        </div>
+        <!-- register ends! -->
 
       </div>
-      <!-- when ends!-->
-
-      <!-- where -->
-      <div class="where">
-
-        <div class="icon-holder">
-          <i class="fa fa-map-marker"></i>
-        </div>
-
-        <div>
-          <p><strong>Where</strong></p>
-          <p><span>Bangalore</span><br /><a href="#">Amrita School of Engineering, Bangalore Campus</a></p>
-        </div>
-
-      </div>
-      <!-- where ends! -->
-
-      <!-- register -->
-      <div class="register-now">
-        <p>Tickets are on sale now, Early bird price till June 15th!</p>
-        <a href="#registration" class="button">Register Now</a>
-      </div>
-      <!-- register ends! -->
+      <!-- header container ends! -->
 
     </div>
-    <!-- header container ends! -->
-
-  </div>
   </div>
   <!-- header ends! -->
 
@@ -180,180 +180,180 @@
   <div class="speakers">
     <div class="container">
 
-        <h2>The Speakers</h2>
-        <p class="subtitle">Master Classes from creative experts</p>
+      <h2>The Speakers</h2>
+      <p class="subtitle">Master Classes from creative experts</p>
 
-        <!-- featured
-        <div class="featured">
+      <!-- featured
+      <div class="featured">
 
-          <div class="image">
-            <img src="images/featured_placeholder.jpg" alt="" />
-          </div>
-
-          <div>
-            <h3>Featured: Phasellus iaculis placerat neque id fringilla.</h4>
-
-            <p class="title">CEO & Co-founder</p>
-
-            <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
-
-            <p>Sed suscipit erat egestas ante sollicitudin, quis tristique leo tristique. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi.</p>
-          </div>
-
-        </div>-->
-        <!-- featured ends! -->
-
-        <!-- speaker -->
-        <div class="single">
-          <img src="images/ChristianCollberg.jpg" alt="" />
-
-          <div>
-            <h3>Christian<br />Collberg</h3>
-            <p><strong>University of Arizona, USA</strong></p>
-            <p>Software Protection</p>
-            <p>
-                <a href="http://www.cs.arizona.edu/people/collberg/" target="_blank">
-                    <i class="fa fa-home fa-lg"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/christian-collberg-a37a0b5" target="_blank">
-                    <i class="fa fa-linkedin fa-lg"></i>
-                </a>
-            </p>
-          </div>
+        <div class="image">
+          <img src="images/featured_placeholder.jpg" alt="" />
         </div>
-        <!-- speaker ends! -->
 
-        <!-- speaker -->
-        <div class="single">
-          <img src="images/Davidson_J.jpg" alt="" />
+        <div>
+          <h3>Featured: Phasellus iaculis placerat neque id fringilla.</h4>
 
+          <p class="title">CEO & Co-founder</p>
 
-          <div>
-            <h3>Jack<br />Davidson</h3>
-            <p><strong>University of Virginia, USA</strong></p>
-            <p>Code protection by dynamic translation</p>
-            <p>
-                <a href="https://www.cs.virginia.edu/people/faculty/davidson.html" target="_blank">
-                    <i class="fa fa-home fa-lg"></i>
-                </a>
-            </p>
-          </div>
+          <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+
+          <p>Sed suscipit erat egestas ante sollicitudin, quis tristique leo tristique. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi.</p>
         </div>
-        <!-- speaker ends! -->
 
-        <!-- speaker -->
-        <div class="single">
-          <img src="images/roberto.jpg" alt="" />
+      </div>-->
+      <!-- featured ends! -->
 
-          <div>
-            <h3>Roberto<br />Giacobazzi</h3>
-            <p><strong>University of Verona, Italia</strong></p>
-            <p>Theory and practice of code attack: Semantics, analysis and code transformation</p>
-            <p>
-                <a href="http://profs.scienze.univr.it/~giaco/" target="_blank">
-                    <i class="fa fa-home fa-lg"></i>
-                </a>
-            </p>
-          </div>
+      <!-- speaker -->
+      <div class="single">
+        <img src="images/ChristianCollberg.jpg" alt="" />
+
+        <div>
+          <h3>Christian<br />Collberg</h3>
+          <p><strong>University of Arizona, USA</strong></p>
+          <p>Software Protection</p>
+          <p>
+            <a href="http://www.cs.arizona.edu/people/collberg/" target="_blank">
+              <i class="fa fa-home fa-lg"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/christian-collberg-a37a0b5" target="_blank">
+              <i class="fa fa-linkedin fa-lg"></i>
+            </a>
+          </p>
         </div>
-        <!-- speaker ends! -->
+      </div>
+      <!-- speaker ends! -->
 
-        <!-- speaker -->
-        <div class="single">
-          <img src="images/lakhotia.jpg" alt="" />
+      <!-- speaker -->
+      <div class="single">
+        <img src="images/Davidson_J.jpg" alt="" />
 
-          <div>
-            <h3>Arun<br />Lakhotia</h3>
-            <p><strong>University of Louisiana, USA</strong></p>
-            <p>Binary analysis in Polymorphic Malware Detection</p>
-            <p>
-                <a href="http://www.cacs.louisiana.edu/~arun/home/index.html" target="_blank">
-                    <i class="fa fa-home fa-lg"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/arun-lakhotia-94176416" target="_blank">
-                    <i class="fa fa-linkedin fa-lg"></i>
-                </a>
-            </p>
-          </div>
+
+        <div>
+          <h3>Jack<br />Davidson</h3>
+          <p><strong>University of Virginia, USA</strong></p>
+          <p>Code protection by dynamic translation</p>
+          <p>
+            <a href="https://www.cs.virginia.edu/people/faculty/davidson.html" target="_blank">
+              <i class="fa fa-home fa-lg"></i>
+            </a>
+          </p>
         </div>
-        <!-- speaker ends! -->
+      </div>
+      <!-- speaker ends! -->
 
-        <!-- speaker -->
-        <div class="single">
-          <img src="images/Mateti.jpg" alt="" />
+      <!-- speaker -->
+      <div class="single">
+        <img src="images/roberto.jpg" alt="" />
 
-          <div>
-              <h3>Prabhakar<br />Mateti</h3>
-            <p><strong>Wright State University, USA</strong></p>
-            <p>Android Security</p>
-            <p>
-                <a href="www.wright.edu/~prabhaker.mateti/" target="_blank">
-                    <i class="fa fa-home fa-lg"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/prabhaker-mateti-b1312415" target="_blank">
-                    <i class="fa fa-linkedin fa-lg"></i>
-                </a>
-            </p>
-          </div>
+        <div>
+          <h3>Roberto<br />Giacobazzi</h3>
+          <p><strong>University of Verona, Italia</strong></p>
+          <p>Theory and practice of code attack: Semantics, analysis and code transformation</p>
+          <p>
+            <a href="http://profs.scienze.univr.it/~giaco/" target="_blank">
+              <i class="fa fa-home fa-lg"></i>
+            </a>
+          </p>
         </div>
-        <!-- speaker ends! -->
+      </div>
+      <!-- speaker ends! -->
 
-        <!-- speaker -->
-        <div class="single">
-          <img src="images/gu.jpg" alt="" />
+      <!-- speaker -->
+      <div class="single">
+        <img src="images/lakhotia.jpg" alt="" />
 
-          <div>
-            <h3>Yuan Xiang<br />Gu</h3>
-            <p><strong>IRDETO, Canada</strong></p>
-            <p>The industrial challenge in Software and information protection.</p>
-            <p>
-                <a href="https://ca.linkedin.com/in/yuan-xiang-gu-6700862" target="_blank">
-                    <i class="fa fa-linkedin fa-lg"></i>
-                </a>
-            </p>
-          </div>
+        <div>
+          <h3>Arun<br />Lakhotia</h3>
+          <p><strong>University of Louisiana, USA</strong></p>
+          <p>Binary analysis in Polymorphic Malware Detection</p>
+          <p>
+            <a href="http://www.cacs.louisiana.edu/~arun/home/index.html" target="_blank">
+              <i class="fa fa-home fa-lg"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/arun-lakhotia-94176416" target="_blank">
+              <i class="fa fa-linkedin fa-lg"></i>
+            </a>
+          </p>
         </div>
-        <!-- speaker ends! -->
+      </div>
+      <!-- speaker ends! -->
 
-        <!-- speaker -->
-        <div class="single">
-          <img src="images/BJ.jpg" alt="" />
+      <!-- speaker -->
+      <div class="single">
+        <img src="images/Mateti.jpg" alt="" />
 
-          <div>
-            <h3>Bharat<br />Jayaraman</h3>
-            <p><strong>University of Buffallo, USA</strong></p>
-            <p>Formal Methods for Security</p>
-            <p>
-                <a href="https://www.cse.buffalo.edu/faculty/bharat/" target="_blank">
-                    <i class="fa fa-home fa-lg"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/dr-bharat-jayaraman-a631b77" target="_blank">
-                    <i class="fa fa-linkedin fa-lg"></i>
-                </a>
-            </p>
-          </div>
+        <div>
+          <h3>Prabhakar<br />Mateti</h3>
+          <p><strong>Wright State University, USA</strong></p>
+          <p>Android Security</p>
+          <p>
+            <a href="www.wright.edu/~prabhaker.mateti/" target="_blank">
+              <i class="fa fa-home fa-lg"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/prabhaker-mateti-b1312415" target="_blank">
+              <i class="fa fa-linkedin fa-lg"></i>
+            </a>
+          </p>
         </div>
-        <!-- speaker ends! -->
+      </div>
+      <!-- speaker ends! -->
 
-        <!-- speaker -->
-        <div class="single">
-          <img src="images/soman.jpg" alt="" />
+      <!-- speaker -->
+      <div class="single">
+        <img src="images/gu.jpg" alt="" />
 
-          <div>
-            <h3>KP<br />Soman</h3>
-            <p><strong>Amrita University, Ettimadai</strong></p>
-            <p>Machine Learning for Security</p>
-            <p>
-                <a href="https://www.amrita.edu/faculty/soman" target="_blank">
-                    <i class="fa fa-home fa-lg"></i>
-                </a>
-                <a href="https://in.linkedin.com/in/soman-k-p-19550a14" target="_blank">
-                    <i class="fa fa-linkedin fa-lg"></i>
-                </a>
-            </p>
-          </div>
+        <div>
+          <h3>Yuan Xiang<br />Gu</h3>
+          <p><strong>IRDETO, Canada</strong></p>
+          <p>The industrial challenge in Software and information protection.</p>
+          <p>
+            <a href="https://ca.linkedin.com/in/yuan-xiang-gu-6700862" target="_blank">
+              <i class="fa fa-linkedin fa-lg"></i>
+            </a>
+          </p>
         </div>
-        <!-- speaker ends! -->
+      </div>
+      <!-- speaker ends! -->
+
+      <!-- speaker -->
+      <div class="single">
+        <img src="images/BJ.jpg" alt="" />
+
+        <div>
+          <h3>Bharat<br />Jayaraman</h3>
+          <p><strong>University of Buffallo, USA</strong></p>
+          <p>Formal Methods for Security</p>
+          <p>
+            <a href="https://www.cse.buffalo.edu/faculty/bharat/" target="_blank">
+              <i class="fa fa-home fa-lg"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/dr-bharat-jayaraman-a631b77" target="_blank">
+              <i class="fa fa-linkedin fa-lg"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- speaker ends! -->
+
+      <!-- speaker -->
+      <div class="single">
+        <img src="images/soman.jpg" alt="" />
+
+        <div>
+          <h3>KP<br />Soman</h3>
+          <p><strong>Amrita University, Ettimadai</strong></p>
+          <p>Machine Learning for Security</p>
+          <p>
+            <a href="https://www.amrita.edu/faculty/soman" target="_blank">
+              <i class="fa fa-home fa-lg"></i>
+            </a>
+            <a href="https://in.linkedin.com/in/soman-k-p-19550a14" target="_blank">
+              <i class="fa fa-linkedin fa-lg"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- speaker ends! -->
 
     </div>
   </div>
@@ -373,9 +373,9 @@
           <li><a href="#tabs-1">Day 1, 2th</a></li>
           <li><a href="#tabs-2">Day 2, 3th</a></li>
           <li><a href="#tabs-3">Day 3, 4th</a></li>
-	        <!--<li><a href="#tabs-3">Day 4, 5th</a></li>
-	        <li><a href="#tabs-3">Day 5, 6th</a></li>
-	        <li><a href="#tabs-3">Day 6, 6th</a></li>-->
+          <!--<li><a href="#tabs-3">Day 4, 5th</a></li>
+          <li><a href="#tabs-3">Day 5, 6th</a></li>
+          <li><a href="#tabs-3">Day 6, 6th</a></li>-->
         </ul>
         <h2>Will be Updated Soon!!!!</h2>
       </div>
@@ -388,60 +388,60 @@
     <div class="container">
 
       <!-- testimonials -->
-        <div class="testimonials">
+      <div class="testimonials">
 
-          <h4>Who should attend the summer school?</h4>
+        <h4>Who should attend the summer school?</h4>
 
-          <div class="slides">
+        <div class="slides">
 
-            <blockquote>
-              <strong>Information Security scientists in the Government</strong>
-            </blockquote>
+          <blockquote>
+            <strong>Information Security scientists in the Government</strong>
+          </blockquote>
 
-            <blockquote>
-	      <strong>Researchers in Academia</strong>
-            </blockquote>
+          <blockquote>
+            <strong>Researchers in Academia</strong>
+          </blockquote>
 
-            <blockquote>
-              <strong>Security Engineers from the Industry</strong>
-            </blockquote>
-
-          </div>
+          <blockquote>
+            <strong>Security Engineers from the Industry</strong>
+          </blockquote>
 
         </div>
-        <!-- testimonials ends! -->
 
-        <!-- bullets -->
-        <div class="bullets">
+      </div>
+      <!-- testimonials ends! -->
 
-          <h3>What to except from this Summer School</h3>
+      <!-- bullets -->
+      <div class="bullets">
 
-          <div>
-            <h4><i class="fa fa-check"></i>Graduate Level completion certificate from ACM</h4>
-            <p></p>
-          </div>
+        <h3>What to except from this Summer School</h3>
 
-          <div>
-            <h4><i class="fa fa-check"></i>Advanced lectures for an in-depth comprehension of code protection technologies.</h4>
-            <p></p>
-          </div>
-
-          <div>
-            <h4><i class="fa fa-check"></i>Hands-­on sessions for practical experiments.</h4>
-            <p></p>
-          </div>
-
-          <div>
-            <h4><i class="fa fa-check"></i>Panel Session on addressing industrial and scientific challenges in Code and Information Protection.</h4>
-            <p></p>
-          </div>
-          <div>
-            <h4><i class="fa fa-check"></i>Poster and Research Discussions.</h4>
-            <p></p>
-          </div>
-
+        <div>
+          <h4><i class="fa fa-check"></i>Graduate Level completion certificate from ACM</h4>
+          <p></p>
         </div>
-        <!-- bullets ends! -->
+
+        <div>
+          <h4><i class="fa fa-check"></i>Advanced lectures for an in-depth comprehension of code protection technologies.</h4>
+          <p></p>
+        </div>
+
+        <div>
+          <h4><i class="fa fa-check"></i>Hands-­on sessions for practical experiments.</h4>
+          <p></p>
+        </div>
+
+        <div>
+          <h4><i class="fa fa-check"></i>Panel Session on addressing industrial and scientific challenges in Code and Information Protection.</h4>
+          <p></p>
+        </div>
+        <div>
+          <h4><i class="fa fa-check"></i>Poster and Research Discussions.</h4>
+          <p></p>
+        </div>
+
+      </div>
+      <!-- bullets ends! -->
 
     </div>
   </div>
@@ -470,22 +470,19 @@
       <h3>Ticket Pricing</h3>
 
       <!-- register form -->
-    <!--  <div class="form">
+      <div class="form">
+          <form action="recieve.php" method="post">
+            <input type="text" name="firstname" placeholder="First Name"/>
+            <input type="text" name="lastname" placeholder="Last Name"/>
+            <input type="text" name="email" placeholder="Email"/>
+            <input type="text" name="address" placeholder="Company/Affiliation"/>
+            <input type="text" name="phone" placeholder="Phone Number"/>
+            <input type="number" name="tickets" placeholder="Number of tickets" id="tickets" value="1"/>
+            <input type="text" name="program" id="program" placeholder="Select your program on the right" readonly="readonly" />
+            <button name="submit" type="submit" id="confirmbutton">Confirm Your Order</button>
+          </form>
 
-        <form action="" method="post">
-          <input type="text" name="firstname" placeholder="First Name"/>
-          <input type="text" name="lastname" placeholder="Last Name"/>
-          <input type="text" name="email" placeholder="Email"/>
-          <input type="text" name="address" placeholder="Address"/>
-          <input type="text" name="zip" placeholder="Zip Code"/>
-          <input type="text" name="city" placeholder="City"/>
-          <input type="text" name="program" id="program" placeholder="Select your program on the right" disabled="disabled" />
-
-          <button name="submit" type="submit">Confirm Your Order</button>
-
-        </form>
-
-      </div> -->
+        </div>
       <!-- register form ends! -->
 
       <!-- prices -->
@@ -493,12 +490,14 @@
 
         <div>
           <p class="amount">&#8377;15,000</p>
+          <input type="hidden" class="amt" value="15000"/>
           <h4>Early Bird <span>Professionals</span></h4>
           <p>Computer Security Professional from both IT industry and Government organizations</p>
         </div>
 
         <div>
           <p class="amount">&#8377;10,000</p>
+          <input type="hidden" class="amt" value="10000"/>
           <h4>Early Bird <span>Academic</span></h4>
           <p>Academic delegate who are afflilated to a University in India or abroad.</p>
         </div>
@@ -506,29 +505,30 @@
 
         <div>
           <p class="amount">&#8377;8,500</p>
+          <input type="hidden" class="amt" value="8500"/>
           <h4>Early Bird <span>Startups</span></h4>
           <p>The employees of startup companies from India can register with amount.</p>
         </div>
 
       </div>
-      <div class="price">
+      <!--<div class="price">-->
 
-        <div>
-          <p class="amount">&#8377;18,000</p> <br /><br />
-          <h4>Regular <span>Professionals</span></h4>
-        </div>
+        <!--<div>-->
+          <!--<p class="amount">&#8377;18,000</p> <br /><br />-->
+          <!--<h4>Regular <span>Professionals</span></h4>-->
+        <!--</div>-->
 
-        <div>
-          <p class="amount">&#8377;12,000</p> <br /><br />
-          <h4>Regular <span>Academic</span></h4>
-        </div>
+        <!--<div>-->
+          <!--<p class="amount">&#8377;12,000</p> <br /><br />-->
+          <!--<h4>Regular <span>Academic</span></h4>-->
+        <!--</div>-->
 
-        <div>
-          <p class="amount">&#8377;10,500</p> <br /><br />
-          <h4>Regular <span>Startups</span></h4>
-        </div>
+        <!--<div>-->
+          <!--<p class="amount">&#8377;10,500</p> <br /><br />-->
+          <!--<h4>Regular <span>Startups</span></h4>-->
+        <!--</div>-->
 
-      </div>
+      <!--</div>-->
       <!-- prices ends! -->
 
     </div>
@@ -590,34 +590,34 @@
             <p>Kasavanahalli, Carmelaram</p>
             <p>Bengaluru, Karnataka 560035</p>
           </div>
-<!--
-          <h5><i class="fa fa-chevron-right"></i> Nearby Accomodation</h5>
+          <!--
+                    <h5><i class="fa fa-chevron-right"></i> Nearby Accomodation</h5>
 
-          <div class="venue">
-            <p><span>Town and Country Resort & Convention Center</span></p>
-            <p>500 Hotel Circle North</p>
-            <p>San Diego, CA 92108</p>
-            <a href="#">Book Online</a>
-          </div>
+                    <div class="venue">
+                      <p><span>Town and Country Resort & Convention Center</span></p>
+                      <p>500 Hotel Circle North</p>
+                      <p>San Diego, CA 92108</p>
+                      <a href="#">Book Online</a>
+                    </div>
 
-          <div class="venue">
-            <p><span>Town and Country Resort & Convention Center</span></p>
-            <p>500 Hotel Circle North</p>
-            <p>San Diego, CA 92108</p>
-            <a href="#">Book Online</a>
-          </div>
+                    <div class="venue">
+                      <p><span>Town and Country Resort & Convention Center</span></p>
+                      <p>500 Hotel Circle North</p>
+                      <p>San Diego, CA 92108</p>
+                      <a href="#">Book Online</a>
+                    </div>
 
-          <div class="venue">
-            <p><span>Town and Country Resort & Convention Center</span></p>
-            <p>500 Hotel Circle North</p>
-            <p>San Diego, CA 92108</p>
-            <a href="#">Book Online</a>
-          </div>
+                    <div class="venue">
+                      <p><span>Town and Country Resort & Convention Center</span></p>
+                      <p>500 Hotel Circle North</p>
+                      <p>San Diego, CA 92108</p>
+                      <a href="#">Book Online</a>
+                    </div>
 
-          <h5><i class="fa fa-chevron-right"></i> Additional details</h5>
+                    <h5><i class="fa fa-chevron-right"></i> Additional details</h5>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
--->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          -->
         </div>
 
       </div>
@@ -713,6 +713,28 @@
 <script src="scripts/form.js"></script>
 <script src="scripts/theme.js"></script>
 <!-- scripts ends! -->
+<script>
+  $(document).ready(function() {
+    var program = $('.price');
+    var priceboxclicked = ''
+    var tickets = $('#tickets');
 
+    tickets.bind( "click change paste", function() {
+      var tickets = parseInt($("#tickets").val());
+      $('#confirmbutton').text("Pay Now: " + parseInt( priceboxclicked.find('.amt').val() ) * tickets );
+    });
+
+    // Program Price select
+
+    var $pricebox = $('.price div');
+    $pricebox.click( function(event) {
+        priceboxclicked = $(this);
+        var tickets = parseInt($("#tickets").val());
+        $('#confirmbutton').text("Pay Now: " + parseInt( $(this).find('.amt').val() ) * tickets );
+    });
+
+
+  });
+</script>
 </body>
 </html>
