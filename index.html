@@ -69,7 +69,6 @@
 
       <ul>
         <li><a href="#speakers">speakers</a></li>
-        <li><a href="#scheadule">scheadule</a></li>
         <li><a href="#registration">registration</a></li>
         <li><a href="#sponsors">sponsors</a></li>
         <li><a href="#location">location</a></li>
@@ -177,7 +176,7 @@
   <a id="speakers" class="anchor"></a>
 
   <!-- speakers -->
-  <div class="speakers" >
+  <div class="speakers">
     <div class="container" >
 
       <h2>The Speakers</h2>
@@ -440,28 +439,34 @@
       <h2>Pricing & Registration</h2>
       <p class="subtitle"><strong>Only 100 available seats</strong> Get your Summer School Tickets early.</p>
 
-      <p class="desc">The payment toward registration for summer school can be made either online <a href="#">click here</a> or by sending a Demand Draft to <strong>Amrita Consultancy</strong> payable at Kollam
+      <h3>Offline Payment</h3>
+      <hr>
+      <p class="error">
+        The payment toward registration for summer school can be made by sending a Demand Draft to <strong>Amrita Consultancy</strong> payable at Kollam
         and sent by post to: <br /><br />
         Ms. Indira Menon,<br />
         Amrita Center for Cybersecurity Systems & Networks <br />
         Amrita School of Engineering,<br />
         Amrita Vishwa Vidyapeetham, Amritapuri, <br />
         Kollam, Kerala - 690525 <br /><br />
-
         Students who are interested to apply can email us (cyber@am.amrita.edu) with a cover letter stating your background and reason why you wanted attend the Summer School.
       </p>
+      <hr>
+      <br>
 
-      <h3>Ticket Pricing</h3>
+      <h3>Online Payment</h3>
+
+      <div>
 
       <!-- register form -->
       <div class="form">
         <form action="https://payment.inctf.in/PayUMoney_form.php" method="post">
-          <input type="text" name="firstname" placeholder="First Name"/>
-          <input type="text" name="lastname" placeholder="Last Name"/>
-          <input type="text" name="email" placeholder="Email"/>
-          <input type="text" name="address" placeholder="Company/Affiliation"/>
-          <input type="text" name="phone" placeholder="Phone Number"/>
-          <input type="number" name="tickets" placeholder="Number of tickets" id="tickets" value="1"/>
+          <input type="text" name="firstname" placeholder="First Name" required/>
+          <input type="text" name="lastname" placeholder="Last Name" required/>
+          <input type="text" name="email" placeholder="Email" required />
+          <input type="text" name="address" placeholder="Company/Affiliation" required/>
+          <input type="text" name="phone" placeholder="Phone Number" required/>
+          <input type="number" name="tickets" placeholder="Number of tickets" id="tickets" value="1" required />
           <input type="text" name="program" id="program" placeholder="Select your program on the right" readonly="readonly" />
           <button name="submit" type="submit" id="confirmbutton">Confirm Your Order</button>
         </form>
@@ -495,28 +500,13 @@
         </div>
 
       </div>
-      <!--<div class="price">-->
 
-      <!--<div>-->
-      <!--<p class="amount">&#8377;18,000</p> <br /><br />-->
-      <!--<h4>Regular <span>Professionals</span></h4>-->
-      <!--</div>-->
-
-      <!--<div>-->
-      <!--<p class="amount">&#8377;12,000</p> <br /><br />-->
-      <!--<h4>Regular <span>Academic</span></h4>-->
-      <!--</div>-->
-
-      <!--<div>-->
-      <!--<p class="amount">&#8377;10,500</p> <br /><br />-->
-      <!--<h4>Regular <span>Startups</span></h4>-->
-      <!--</div>-->
-
-      <!--</div>-->
-      <!-- prices ends! -->
+      </div>
 
     </div>
+
   </div>
+
   <!-- registration ends! -->
 
   <a id="sponsors" class="anchor"></a>
@@ -702,12 +692,13 @@
 <script>
   $(document).ready(function() {
     var program = $('.price');
-    var priceboxclicked = ''
+    var priceboxclicked = '';
     var tickets = $('#tickets');
 
     tickets.bind( "click change paste", function() {
       var tickets = parseInt($("#tickets").val());
-      $('#confirmbutton').text("Pay Now: " + parseInt( priceboxclicked.find('.amt').val() ) * tickets );
+      $('#confirmbutton').text("Pay Now: " + parseInt( priceboxclicked.find('.amt').val() ) * tickets + " " );
+      $('#confirmbutton').append( $("<i class='fa fa-arrow-circle-right'></i>"));
     });
 
     // Program Price select
@@ -716,7 +707,8 @@
     $pricebox.click( function(event) {
       priceboxclicked = $(this);
       var tickets = parseInt($("#tickets").val());
-      $('#confirmbutton').text("Pay Now: " + parseInt( $(this).find('.amt').val() ) * tickets );
+      $('#confirmbutton').text("Pay Now: " + parseInt( $(this).find('.amt').val() ) * tickets +  " " );
+      $('#confirmbutton').append( $("<i class='fa fa-arrow-circle-right'></i>"));
     });
 
 
