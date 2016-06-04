@@ -13,8 +13,8 @@
 /* 11. Footer Section */
 /* -------------------- */
 /* 1. Imports & Clears */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300&subset=latin,latin-ext);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,latin-ext);
 .header .menu:after, .header ul:after, .when:after, .where:after, .topics .container:after, .speakers:after, .featured:after, .schedule ul:after, .day:after, .event:after, .event .event-info div:after, .bullets:after, .registration:after, .sponsors .container:after, .info:after, .social div:after {
   clear: both;
   content: ".";
