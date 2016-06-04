@@ -177,8 +177,8 @@
   <a id="speakers" class="anchor"></a>
 
   <!-- speakers -->
-  <div class="speakers">
-    <div class="container">
+  <div class="speakers" >
+    <div class="container" >
 
       <h2>The Speakers</h2>
       <p class="subtitle">Master Classes from creative experts</p>
@@ -222,23 +222,6 @@
       <!-- speaker ends! -->
 
       <!-- speaker -->
-<!--
-      <div class="single">
-        <img src="images/Davidson_J.jpg" alt="" />
-        <div>
-          <h3>Jack<br />Davidson</h3>
-          <p><strong>University of Virginia, USA</strong></p>
-          <p>Code protection by dynamic translation</p>
-          <p>
-            <a href="https://www.cs.virginia.edu/people/faculty/davidson.html" target="_blank">
-              <i class="fa fa-home fa-lg"></i>
-            </a>
-          </p>
-        </div>
-      </div> -->
-      <!-- speaker ends! -->
-
-      <!-- speaker -->
       <div class="single">
         <img src="images/roberto.jpg" alt="" />
 
@@ -273,6 +256,7 @@
           </p>
         </div>
       </div>
+
       <!-- speaker ends! -->
 
       <!-- speaker -->
@@ -356,32 +340,32 @@
   </div>
   <!-- speakers ends! -->
 
-<!--  <a id="scheadule" class="anchor"></a> -->
+  <!--  <a id="scheadule" class="anchor"></a> -->
 
   <!-- schedule -->
 
-<!--
-  <div class="schedule">
-    <div class="container">
+  <!--
+    <div class="schedule">
+      <div class="container">
 
-      <h2>Summer School Schedule</h2>
-      <p class="subtitle">packed with high quality content, just for you.</p>
-      <div class="tabs">
+        <h2>Summer School Schedule</h2>
+        <p class="subtitle">packed with high quality content, just for you.</p>
+        <div class="tabs">
 
-        <ul>
-          <li><a href="#tabs-1">Day 1, 2th</a></li>
-          <li><a href="#tabs-2">Day 2, 3th</a></li>
-          <li><a href="#tabs-3">Day 3, 4th</a></li> -->
-          <!--<li><a href="#tabs-3">Day 4, 5th</a></li>
-          <li><a href="#tabs-3">Day 5, 6th</a></li>
-          <li><a href="#tabs-3">Day 6, 6th</a></li>-->
-<!--
-        </ul>
-        <h2>Will be Updated Soon!!!!</h2>
+          <ul>
+            <li><a href="#tabs-1">Day 1, 2th</a></li>
+            <li><a href="#tabs-2">Day 2, 3th</a></li>
+            <li><a href="#tabs-3">Day 3, 4th</a></li> -->
+  <!--<li><a href="#tabs-3">Day 4, 5th</a></li>
+  <li><a href="#tabs-3">Day 5, 6th</a></li>
+  <li><a href="#tabs-3">Day 6, 6th</a></li>-->
+  <!--
+          </ul>
+          <h2>Will be Updated Soon!!!!</h2>
+        </div>
       </div>
     </div>
-  </div>
--->
+
   <!-- schedule ends! -->
   <!-- why -->
   <div class="why">
@@ -471,18 +455,18 @@
 
       <!-- register form -->
       <div class="form">
-          <form action="https://payment.inctf.in/PayUMoney_form.php" method="post">
-            <input type="text" name="firstname" placeholder="First Name"/>
-            <input type="text" name="lastname" placeholder="Last Name"/>
-            <input type="text" name="email" placeholder="Email"/>
-            <input type="text" name="address" placeholder="Company/Affiliation"/>
-            <input type="text" name="phone" placeholder="Phone Number"/>
-            <input type="number" name="tickets" placeholder="Number of tickets" id="tickets" value="1"/>
-            <input type="text" name="program" id="program" placeholder="Select your program on the right" readonly="readonly" />
-            <button name="submit" type="submit" id="confirmbutton">Confirm Your Order</button>
-          </form>
+        <form action="https://payment.inctf.in/PayUMoney_form.php" method="post">
+          <input type="text" name="firstname" placeholder="First Name"/>
+          <input type="text" name="lastname" placeholder="Last Name"/>
+          <input type="text" name="email" placeholder="Email"/>
+          <input type="text" name="address" placeholder="Company/Affiliation"/>
+          <input type="text" name="phone" placeholder="Phone Number"/>
+          <input type="number" name="tickets" placeholder="Number of tickets" id="tickets" value="1"/>
+          <input type="text" name="program" id="program" placeholder="Select your program on the right" readonly="readonly" />
+          <button name="submit" type="submit" id="confirmbutton">Confirm Your Order</button>
+        </form>
 
-        </div>
+      </div>
       <!-- register form ends! -->
 
       <!-- prices -->
@@ -513,20 +497,20 @@
       </div>
       <!--<div class="price">-->
 
-        <!--<div>-->
-          <!--<p class="amount">&#8377;18,000</p> <br /><br />-->
-          <!--<h4>Regular <span>Professionals</span></h4>-->
-        <!--</div>-->
+      <!--<div>-->
+      <!--<p class="amount">&#8377;18,000</p> <br /><br />-->
+      <!--<h4>Regular <span>Professionals</span></h4>-->
+      <!--</div>-->
 
-        <!--<div>-->
-          <!--<p class="amount">&#8377;12,000</p> <br /><br />-->
-          <!--<h4>Regular <span>Academic</span></h4>-->
-        <!--</div>-->
+      <!--<div>-->
+      <!--<p class="amount">&#8377;12,000</p> <br /><br />-->
+      <!--<h4>Regular <span>Academic</span></h4>-->
+      <!--</div>-->
 
-        <!--<div>-->
-          <!--<p class="amount">&#8377;10,500</p> <br /><br />-->
-          <!--<h4>Regular <span>Startups</span></h4>-->
-        <!--</div>-->
+      <!--<div>-->
+      <!--<p class="amount">&#8377;10,500</p> <br /><br />-->
+      <!--<h4>Regular <span>Startups</span></h4>-->
+      <!--</div>-->
 
       <!--</div>-->
       <!-- prices ends! -->
@@ -730,9 +714,9 @@
 
     var $pricebox = $('.price div');
     $pricebox.click( function(event) {
-        priceboxclicked = $(this);
-        var tickets = parseInt($("#tickets").val());
-        $('#confirmbutton').text("Pay Now: " + parseInt( $(this).find('.amt').val() ) * tickets );
+      priceboxclicked = $(this);
+      var tickets = parseInt($("#tickets").val());
+      $('#confirmbutton').text("Pay Now: " + parseInt( $(this).find('.amt').val() ) * tickets );
     });
 
 
