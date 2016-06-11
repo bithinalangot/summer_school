@@ -608,22 +608,22 @@ a {
       right: -10px; }
 
 .bullets {
-  padding: 0 30px; }
+  padding: 0 10px; }
   .bullets h3, .bullets h4 {
     font-size: 1.71429em;
     font-weight: 300; }
   .bullets h3 {
     text-transform: uppercase;
-    padding: 0 30px; }
+    padding: 0 10px; }
     @media all and (max-width: 780px) {
       .bullets h3 {
         padding: 0; } }
   .bullets h4 {
-    color: #10a1d6; }
+    color: #ffffff; }
   .bullets div {
-    padding: 0 30px;
+    padding: 0 10px;
     width: 50%;
-    min-height: 140px;
+    min-height: 100px;
     float: left; }
     @media all and (max-width: 780px) {
       .bullets div {
