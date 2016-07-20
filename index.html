@@ -13,6 +13,9 @@
         <link href="scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
         <link href="animate.min.css" rel="stylesheet" />
         <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="flipclock.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/flipclock.min.js"></script>
         <!-- Google Map -->
         <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script>
@@ -554,9 +557,9 @@
                                         <!-- event time ends! -->
                                         <!-- event details -->
                                         <div class="event-info">
-                                            <div  data-toggle="modal" data-target="#arun">
-                                                <h4>Malware Detection</h4>
-                                                <p class="speaker"><strong>Arun Lakhotia</strong><br/></p>
+                                            <div  data-toggle="modal" data-target="#soman">
+                                                <h4>Machine Learning for Security</h4>
+                                                <p class="speaker"><strong>K. P. Soman</strong><br/></p>
                                             </div>
                                         </div>
                                         <!-- event details ends! -->
@@ -661,8 +664,8 @@
                                         <!-- event details -->
                                         <div class="event-info">
                                             <div  data-toggle="modal" data-target="#arun">
-                                                <h4>Malware Detection</h4>
-                                                <p class="speaker"><strong>Arun Lakhotia</strong><br/></p>
+                                                <h4>Formal Methods</h4>
+                                                <p class="speaker"><strong>Bharat Jayaraman</strong><br/></p>
                                             </div>
                                         </div>
                                         <!-- event details ends! -->
@@ -824,6 +827,34 @@
                                         <!-- event time ends! -->
                                         <!-- event details -->
                                         <div class="event-info">
+                                            <div>
+                                                <h4>Panel Discussion</h4>
+                                            </div>
+                                        </div>
+                                        <!-- event details ends! -->
+                                    </div>
+                                    <!-- single event ends! -->
+                                    <!-- single event -->
+                                    <div class="event">
+                                        <!-- event time -->
+                                        <div class="event-time">17:00 <span></span></div>
+                                        <!-- event time ends! -->
+                                        <!-- event details -->
+                                        <div class="event-info">
+                                            <div>
+                                                <h4>Break</h4>
+                                            </div>
+                                        </div>
+                                        <!-- event details ends! -->
+                                    </div>
+                                    <!-- single event ends! -->
+                                    <!-- single event -->
+                                    <div class="event extend">
+                                        <!-- event time -->
+                                        <div class="event-time">18:00 - 19:30 <span><i class="fa fa-angle-up"></i></span></div>
+                                        <!-- event time ends! -->
+                                        <!-- event details -->
+                                        <div class="event-info">
                                             <div data-toggle="modal" data-target="#roberto">
                                                 <h4>Code Attack</h4>
                                                 <p class="speaker"><strong>Roberto Giacobazzi</strong><br/></p>
@@ -901,9 +932,9 @@
                                         <!-- event time ends! -->
                                         <!-- event details -->
                                         <div class="event-info">
-                                            <div data-toggle="modal" data-target="#bharat">
-                                                <h4>Formal Methods</h4>
-                                                <p class="speaker"><strong>Bharat Jayaraman</strong><br/></p>
+                                            <div data-toggle="modal" data-target="#arun">
+                                                <h4>Malware Detection</h4>
+                                                <p class="speaker"><strong>Arun Lakhotia</strong><br/></p>
                                             </div>
                                         </div>
                                         <!-- event details ends! -->
@@ -1007,9 +1038,9 @@
                                         <!-- event time ends! -->
                                         <!-- event details -->
                                         <div class="event-info">
-                                            <div  data-toggle="modal" data-target="#soman">
-                                                <h4>Machine Learning for Security</h4>
-                                                <p class="speaker"><strong>K. P. Soman</strong><br/></p>
+                                            <div  data-toggle="modal" data-target="#arun">
+                                                <h4>Malware Detection</h4>
+                                                <p class="speaker"><strong>Arun Lakhotia</strong><br/></p>
                                             </div>
                                         </div>
                                         <!-- event details ends! -->
@@ -1109,6 +1140,23 @@
                     <div class="alert alert-info">
                         <span class="glyphicon glyphicon-info-sign"></span> Registration has been closed
                     </div>
+                    <div class="row">
+                        <h2>Event will start in</h2>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <div class="flip-counter clock"></div>
+                            <script type="text/javascript">
+                            var date = new Date("August 02, 2016 09:00:00");
+                            var now = new Date();
+                            var diff = (date.getTime()/1000) - (now.getTime()/1000);
+                            var clock = $('.clock').FlipClock(diff,{
+                                clockFace: 'DailyCounter',
+                                countdown: true
+                            });  
+                            </script>
+                        </div> <!-- col-md-8-->
+                        <div class="col-md-2"></div>
+                    </div> <!--row-->
                 </div>
             </div>
         </div>
